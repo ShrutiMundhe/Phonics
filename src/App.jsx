@@ -155,144 +155,159 @@ const WORD_BUILDER_PRESETS = [
   { word: 'HAT', letters: ['h', 'a', 't'], meaning: 'Wear it on your head', Icon: Sparkles }
 ];
 
-// Complete 8-Level Phonics Curriculum Progression
+// Complete 9-Level Phonics & Literacy Progression
 const PHONICS_LEVELS = [
   {
     level: 'Level 1',
-    title: 'Sound Awareness & Pre-Reading',
-    badge: 'Pre-Reading',
-    badgeBg: 'bg-amber-100 text-amber-900 border-amber-300',
-    color: 'amber',
-    borderColor: 'border-amber-300',
-    accentBg: 'bg-amber-500',
-    textColor: 'text-amber-600',
-    goal: 'Build sound awareness before reading letters',
-    points: [
-      'Listening skills (environmental & musical sounds)',
-      'Rhyming words & auditory sound discrimination',
-      'Beginning sounds (identify first sound in words)',
-      'Oral blending (c-a-t → cat)',
-      'Oral segmenting (dog → d-o-g)'
-    ]
-  },
-  {
-    level: 'Level 2',
-    title: 'Letter Sounds A-Z & Vowels',
-    badge: 'Sounds A-Z',
+    title: '🟢 Phonics Foundation',
+    badge: 'For beginners',
     badgeBg: 'bg-emerald-100 text-emerald-900 border-emerald-300',
     color: 'emerald',
     borderColor: 'border-emerald-300',
     accentBg: 'bg-emerald-500',
     textColor: 'text-emerald-600',
-    goal: 'Recognize and pronounce letter sounds correctly',
+    goal: 'Build sound awareness, 42 basic sounds, oral blending & segmenting',
     points: [
-      'Introduce pure phonetic sounds (e.g., /a/ as in apple, /b/ as in bat)',
-      'Vowels vs Consonants distinction',
-      'Match sounds to letters',
-      'Identify beginning sounds in words',
-      'Long and short vowel sound introduction'
+      'Sounds: Introduction to phonics, 42 basic letter sounds, correct pronunciation & letter formation (capital & small)',
+      'Reading: Oral blending, 2–3 sound words, CVC words (cat, dog, pin, sun), segmenting & reading simple words',
+      'Writing: Sound-to-letter writing, simple word dictation & correct letter formation',
+      'Vocabulary: Basic everyday vocabulary, picture-word association & rhyming words'
+    ]
+  },
+  {
+    level: 'Level 2',
+    title: '🟡 Blending & Reading',
+    badge: 'Reading Confidence',
+    badgeBg: 'bg-amber-100 text-amber-900 border-amber-300',
+    color: 'amber',
+    borderColor: 'border-amber-300',
+    accentBg: 'bg-amber-500',
+    textColor: 'text-amber-600',
+    goal: 'Building reading confidence & blending CVC/CCVC words',
+    points: [
+      'Revision of 42 sounds, CVC and CVCC words',
+      'CCVC words: stop, frog, clap & consonant blends (beginning & ending)',
+      'Digraphs & reading simple sentences',
+      'Spelling simple words, dictation & tricky sight-word recognition',
+      'Basic punctuation: Capital letters and full stops'
     ]
   },
   {
     level: 'Level 3',
-    title: 'CVC Words & Blending',
-    badge: '3-Letter Words',
+    title: '🟠 Digraphs & Advanced Phonics',
+    badge: 'Digraphs & Vowels',
+    badgeBg: 'bg-orange-100 text-orange-900 border-orange-300',
+    color: 'orange',
+    borderColor: 'border-orange-300',
+    accentBg: 'bg-orange-500',
+    textColor: 'text-orange-600',
+    goal: 'Master vowel digraphs, silent letters & multi-syllable reading',
+    points: [
+      'Vowel Digraphs: ai, ay, ee, ea, oa, ow, oi, oy, ou, ow, oo, ar, or, er, ir, ur, au, aw',
+      'Consonant Patterns: sh, ch, th, ng, qu, ck, wh, ph',
+      'Silent letters & alternative spelling patterns',
+      'Reading longer words, two-syllable words, decodable sentences & short stories'
+    ]
+  },
+  {
+    level: 'Level 4',
+    title: '🔵 Alternative Spellings',
+    badge: 'Spelling Choice',
     badgeBg: 'bg-sky-100 text-sky-900 border-sky-300',
     color: 'sky',
     borderColor: 'border-sky-300',
     accentBg: 'bg-sky-500',
     textColor: 'text-sky-600',
-    goal: 'Blending and reading simple 3-letter words',
+    goal: 'Learn that one sound can have different spellings (Jolly Readers 2)',
     points: [
-      'Consonant-Vowel-Consonant (CVC) words: cat, dog, pen, sit, cup',
-      'Blending sounds together (c-a-t → cat)',
-      'Segmenting words for spelling',
-      'Simple dictation practice'
+      '/ai/ → ai, ay, a_e | /ee/ → ee, ea, e_e, y | /oa/ → oa, ow, o_e',
+      '/ie/ → ie, igh, i_e, y | /ue/ → ue, ew, u_e | /er/ → er, ir, ur | /oi/ → oi, oy | /ou/ → ou, ow',
+      'Skills: Choosing correct spelling & reading unfamiliar words',
+      'Spelling from dictation, word families, homophones & reading comprehension'
     ]
   },
   {
-    level: 'Level 4',
-    title: 'Consonant & Vowel Digraphs',
-    badge: 'Digraphs',
+    level: 'Level 5',
+    title: '🟣 Advanced Phonics & Spelling',
+    badge: 'Spelling Rules',
     badgeBg: 'bg-purple-100 text-purple-900 border-purple-300',
     color: 'purple',
     borderColor: 'border-purple-300',
     accentBg: 'bg-purple-500',
     textColor: 'text-purple-600',
-    goal: 'Learn two letters combining to make one sound',
+    goal: 'Complex vowel patterns, Magic E, prefixes & multi-syllable words',
     points: [
-      'Consonant Digraphs: sh (ship), ch (chat), th (thin/this), wh (what), ph (phone), ng (ring)',
-      'Vowel Digraphs: ai (rain), ee (tree), oa (boat), ie (pie), ue (blue)',
-      'Blending digraph words in sentences',
-      'Guided dictation & spelling'
+      'Complex vowel patterns, silent letters & Split Digraphs / Magic E',
+      'Common spelling rules, double consonants, prefixes & suffixes',
+      'Compound words, 2- & 3-syllable words, homophones & dictionary skills',
+      'Reading short paragraphs, story reading & text comprehension questions'
     ]
   },
   {
-    level: 'Level 5',
-    title: 'Beginning & Final Blends',
-    badge: 'Blends',
+    level: 'Level 6',
+    title: '🔴 Reading, Spelling & Grammar',
+    badge: 'Literacy & Grammar',
     badgeBg: 'bg-rose-100 text-rose-900 border-rose-300',
     color: 'rose',
     borderColor: 'border-rose-300',
     accentBg: 'bg-rose-500',
     textColor: 'text-rose-600',
-    goal: 'Learn blended consonant sounds',
+    goal: 'Move beyond basic phonics into strong literacy & grammar skills',
     points: [
-      'Beginning blends: bl, cl, fl, gl, pl, sl | br, cr, dr, fr, gr, tr',
-      'Final blends: nd, nt, st, mp, sk',
-      'Examples: black, frog, jump, nest',
-      'Fluent 4+ letter word reading'
-    ]
-  },
-  {
-    level: 'Level 6',
-    title: 'Tricky Words & Sight Words',
-    badge: 'Sight Reading',
-    badgeBg: 'bg-teal-100 text-teal-900 border-teal-300',
-    color: 'teal',
-    borderColor: 'border-teal-300',
-    accentBg: 'bg-teal-500',
-    textColor: 'text-teal-600',
-    goal: 'Master high-frequency non-phonetic words',
-    points: [
-      'Tricky words that don\'t follow standard phonics (the, said, was, one)',
-      'Flashcard memory games & instant recognition',
-      'Enhancing reading flow & sentence fluency',
-      'Dictation of tricky word sentences'
+      'Spelling: Advanced patterns, prefixes & suffixes, irregular spellings, word roots & silent letters',
+      'Grammar: Nouns, pronouns, verbs, adjectives, adverbs, articles, prepositions, conjunctions, singular/plural & tenses',
+      'Writing: Sentence formation, paragraph writing, creative writing & story writing'
     ]
   },
   {
     level: 'Level 7',
-    title: 'Phonics Spelling Rules',
-    badge: 'Spelling Rules',
+    title: '📚 Grammar & Literacy 1',
+    badge: 'Post-Phonics',
     badgeBg: 'bg-indigo-100 text-indigo-900 border-indigo-300',
     color: 'indigo',
     borderColor: 'border-indigo-300',
     accentBg: 'bg-indigo-500',
     textColor: 'text-indigo-600',
-    goal: 'Master systematic rules for accurate spelling',
+    goal: 'First-year Spelling, Grammar & Punctuation programme',
     points: [
-      'Magic "E" / Silent "E" rule (hop → hope)',
-      'Doubling rule (floss rule: ff, ll, ss, zz)',
-      'When to use "c", "k", or "ck"',
-      'Multiple spelling patterns for long vowels'
+      'Vowel digraphs, alternative vowel spellings, plurals & consonant blends',
+      'Common & proper nouns, pronouns, verbs & tenses (present/past/future)',
+      'Adjectives, adverbs, articles (a/an/the) & alphabetical order',
+      'Capital letters, full stops, speech marks & tricky word rules'
     ]
   },
   {
     level: 'Level 8',
-    title: 'Advanced Phonics & Comprehension',
-    badge: 'Fluent Reader',
+    title: '📖 Advanced Grammar & Writing',
+    badge: 'Advanced Writing',
+    badgeBg: 'bg-teal-100 text-teal-900 border-teal-300',
+    color: 'teal',
+    borderColor: 'border-teal-300',
+    accentBg: 'bg-teal-500',
+    textColor: 'text-teal-600',
+    goal: 'Sentence types, clauses, paragraph building & creative writing',
+    points: [
+      'Sentence types: Statements, questions, commands & exclamations',
+      'Conjunctions, prepositions, comparatives & superlatives',
+      'Syllables, advanced spelling patterns & paragraph structure',
+      'Past/present continuous, subject & object, collective nouns, comprehension & creative writing'
+    ]
+  },
+  {
+    level: 'Level 9',
+    title: '⭐ Advanced Literacy',
+    badge: 'Mastery Level',
     badgeBg: 'bg-amber-100 text-amber-900 border-amber-400',
     color: 'amber',
     borderColor: 'border-amber-400',
     accentBg: 'bg-amber-500',
     textColor: 'text-amber-600',
-    goal: 'Apply phonics in full reading & comprehension',
+    goal: 'Complex syntax, tenses, idioms, formal/informal language & essays',
     points: [
-      'Reading short sentences & storybooks',
-      'Story comprehension & context understanding',
-      'Advanced dictation & spelling mastery',
-      'Independent confident reading'
+      'Complex sentence structures & clauses (independent/dependent)',
+      'Tenses, infinitives, possessive nouns, abstract/concrete nouns & irregular plurals',
+      'Prefixes & suffixes, synonyms & antonyms, idioms & formal/informal language',
+      'Advanced punctuation, paragraph development, reading comprehension & essay/story writing'
     ]
   }
 ];
@@ -390,110 +405,102 @@ const renderLevelVisual = (levelIndex) => {
   switch(levelIndex) {
     case 0:
       return (
-        <div className="bg-gradient-to-tr from-amber-400 to-orange-400 p-6 rounded-3xl text-slate-950 shadow-xl border-2 border-amber-200 relative overflow-hidden space-y-3">
+        <div className="bg-gradient-to-tr from-emerald-400 to-teal-500 p-6 rounded-3xl text-slate-950 shadow-xl border-2 border-emerald-200 relative overflow-hidden space-y-3">
           <div className="flex items-center justify-between">
-            <span className="bg-slate-950 text-amber-400 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 1 Sound Demo</span>
+            <span className="bg-slate-950 text-emerald-400 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 1 Demo</span>
             <Volume2 className="w-6 h-6 text-slate-950 animate-bounce-soft shrink-0" />
           </div>
           <div className="bg-white/90 backdrop-blur-md p-4 rounded-2xl space-y-2 border border-white/60">
             <div className="flex items-center justify-around font-black text-xs sm:text-sm">
-              <span className="bg-amber-100 text-amber-900 px-3 py-1.5 rounded-xl border border-amber-300">👂 Listening</span>
-              <span className="text-amber-500 font-bold">➔</span>
-              <span className="bg-orange-100 text-orange-900 px-3 py-1.5 rounded-xl border border-orange-300">🎵 Rhyming</span>
+              <span className="bg-emerald-100 text-emerald-900 px-3 py-1.5 rounded-xl border border-emerald-300">👂 42 Sounds</span>
+              <span className="text-emerald-500 font-bold">➔</span>
+              <span className="bg-teal-100 text-teal-900 px-3 py-1.5 rounded-xl border border-teal-300">🎵 Blending</span>
             </div>
             <p className="text-xs font-extrabold text-slate-800 text-center pt-1">
-              Oral Blending: <span className="underline decoration-amber-500 font-black text-slate-900">/c/ + /a/ + /t/ = CAT 🐱</span>
+              Oral Blending: <span className="underline decoration-emerald-500 font-black text-slate-900">/c/ + /a/ + /t/ = CAT 🐱</span>
             </p>
           </div>
         </div>
       );
     case 1:
       return (
-        <div className="bg-gradient-to-tr from-emerald-400 to-teal-500 p-6 rounded-3xl text-slate-950 shadow-xl border-2 border-emerald-200 relative overflow-hidden space-y-3">
+        <div className="bg-gradient-to-tr from-amber-400 to-orange-400 p-6 rounded-3xl text-slate-950 shadow-xl border-2 border-amber-200 relative overflow-hidden space-y-3">
           <div className="flex items-center justify-between">
-            <span className="bg-slate-950 text-emerald-400 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 2 Phonics Tiles</span>
+            <span className="bg-slate-950 text-amber-400 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 2 Demo</span>
             <Sparkles className="w-6 h-6 text-slate-950 animate-bounce-soft shrink-0" />
           </div>
           <div className="bg-white/90 backdrop-blur-md p-4 rounded-2xl space-y-2 border border-white/60">
-            <div className="flex items-center justify-center gap-2 font-black">
-              <span className="w-10 h-10 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-lg shadow-md border border-amber-200">A</span>
-              <span className="w-10 h-10 bg-sky-400 text-white rounded-xl flex items-center justify-center text-lg shadow-md border border-sky-200">B</span>
-              <span className="w-10 h-10 bg-rose-400 text-white rounded-xl flex items-center justify-center text-lg shadow-md border border-rose-200">C</span>
-              <span className="w-10 h-10 bg-purple-400 text-white rounded-xl flex items-center justify-center text-lg shadow-md border border-purple-200">D</span>
+            <div className="flex items-center justify-center gap-2 font-black text-xs">
+              <span className="bg-amber-100 text-amber-900 px-2.5 py-1 rounded-xl border border-amber-300">stop 🛑</span>
+              <span className="bg-orange-100 text-orange-900 px-2.5 py-1 rounded-xl border border-orange-300">frog 🐸</span>
+              <span className="bg-yellow-100 text-yellow-900 px-2.5 py-1 rounded-xl border border-yellow-300">clap 👏</span>
             </div>
             <p className="text-xs font-extrabold text-slate-800 text-center pt-1">
-              Pure Sounds: <span className="bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded font-black">/a/ Apple 🍎</span> • <span className="bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded font-black">/b/ Bat 🦇</span>
+              CCVC & CVCC Words + Sight Words 📖
             </p>
           </div>
         </div>
       );
     case 2:
       return (
-        <div className="bg-gradient-to-tr from-sky-400 to-blue-500 p-6 rounded-3xl text-slate-950 shadow-xl border-2 border-sky-200 relative overflow-hidden space-y-3">
+        <div className="bg-gradient-to-tr from-orange-400 to-amber-500 p-6 rounded-3xl text-slate-950 shadow-xl border-2 border-orange-200 relative overflow-hidden space-y-3">
           <div className="flex items-center justify-between">
-            <span className="bg-slate-950 text-sky-400 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 3 CVC Blending</span>
+            <span className="bg-slate-950 text-orange-400 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 3 Demo</span>
             <Zap className="w-6 h-6 text-slate-950 animate-bounce-soft shrink-0" />
           </div>
           <div className="bg-white/90 backdrop-blur-md p-4 rounded-2xl space-y-2 border border-white/60">
-            <div className="flex items-center justify-center gap-1.5 font-black">
-              <span className="w-9 h-11 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl shadow-md font-heading">C</span>
-              <span className="text-lg text-sky-700">+</span>
-              <span className="w-9 h-11 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl shadow-md font-heading">A</span>
-              <span className="text-lg text-sky-700">+</span>
-              <span className="w-9 h-11 bg-amber-400 text-slate-950 rounded-xl flex items-center justify-center text-xl shadow-md font-heading">T</span>
-              <span className="text-lg text-sky-700">=</span>
-              <span className="bg-sky-600 text-white px-3 py-1.5 rounded-xl text-xs sm:text-sm font-black shadow-md font-heading">CAT 🐱</span>
+            <div className="grid grid-cols-2 gap-2 text-xs font-black">
+              <span className="bg-orange-100 text-orange-900 p-2 rounded-xl border border-orange-200 text-center">ai / ay ➔ Rain 🌧️</span>
+              <span className="bg-amber-100 text-amber-900 p-2 rounded-xl border border-amber-200 text-center">ee / ea ➔ Tree 🌳</span>
+              <span className="bg-yellow-100 text-yellow-900 p-2 rounded-xl border border-yellow-200 text-center">oa / ow ➔ Boat ⛵</span>
+              <span className="bg-orange-100 text-orange-900 p-2 rounded-xl border border-orange-200 text-center">oi / oy ➔ Toy 🧸</span>
             </div>
           </div>
         </div>
       );
     case 3:
       return (
-        <div className="bg-gradient-to-tr from-purple-400 to-indigo-500 p-6 rounded-3xl text-white shadow-xl border-2 border-purple-200 relative overflow-hidden space-y-3">
+        <div className="bg-gradient-to-tr from-sky-400 to-blue-500 p-6 rounded-3xl text-white shadow-xl border-2 border-sky-200 relative overflow-hidden space-y-3">
           <div className="flex items-center justify-between">
-            <span className="bg-slate-950 text-purple-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 4 Digraph Magic</span>
+            <span className="bg-slate-950 text-sky-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 4 Demo</span>
             <Sparkles className="w-6 h-6 text-amber-300 animate-bounce-soft shrink-0" />
           </div>
-          <div className="bg-white/95 backdrop-blur-md text-slate-900 p-4 rounded-2xl space-y-2 border border-white/60">
-            <div className="grid grid-cols-2 gap-2 text-xs font-black">
-              <span className="bg-purple-100 text-purple-900 p-2 rounded-xl border border-purple-200 text-center">sh ➔ Ship 🚢</span>
-              <span className="bg-purple-100 text-purple-900 p-2 rounded-xl border border-purple-200 text-center">ch ➔ Chat 💬</span>
-              <span className="bg-indigo-100 text-indigo-900 p-2 rounded-xl border border-indigo-200 text-center">ee ➔ Tree 🌳</span>
-              <span className="bg-indigo-100 text-indigo-900 p-2 rounded-xl border border-indigo-200 text-center">ai ➔ Rain 🌧️</span>
-            </div>
+          <div className="bg-white/95 backdrop-blur-md text-slate-900 p-4 rounded-2xl space-y-2 border border-white/60 text-center">
+            <span className="bg-sky-100 text-sky-900 px-3 py-1 rounded-full text-xs font-black inline-block">Alternative Spellings ✨</span>
+            <p className="text-xs font-extrabold text-slate-800 pt-1">
+              /ai/ ➔ <span className="text-sky-600 font-black">ai, ay, a_e</span> | /ee/ ➔ <span className="text-sky-600 font-black">ee, ea, e_e, y</span>
+            </p>
           </div>
         </div>
       );
     case 4:
       return (
-        <div className="bg-gradient-to-tr from-rose-400 to-pink-500 p-6 rounded-3xl text-white shadow-xl border-2 border-rose-200 relative overflow-hidden space-y-3">
+        <div className="bg-gradient-to-tr from-purple-400 to-indigo-500 p-6 rounded-3xl text-white shadow-xl border-2 border-purple-200 relative overflow-hidden space-y-3">
           <div className="flex items-center justify-between">
-            <span className="bg-slate-950 text-rose-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 5 Consonant Blends</span>
-            <Zap className="w-6 h-6 text-yellow-300 animate-bounce-soft shrink-0" />
+            <span className="bg-slate-950 text-purple-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 5 Demo</span>
+            <Wand2 className="w-6 h-6 text-amber-300 animate-bounce-soft shrink-0" />
           </div>
-          <div className="bg-white/95 backdrop-blur-md text-slate-900 p-4 rounded-2xl space-y-2 border border-white/60">
-            <div className="grid grid-cols-2 gap-2 text-xs font-black">
-              <span className="bg-rose-100 text-rose-900 p-2 rounded-xl border border-rose-200 text-center">bl + ack = black ⬛</span>
-              <span className="bg-rose-100 text-rose-900 p-2 rounded-xl border border-rose-200 text-center">fr + og = frog 🐸</span>
-              <span className="bg-pink-100 text-pink-900 p-2 rounded-xl border border-pink-200 text-center">ju + mp = jump 🦘</span>
-              <span className="bg-pink-100 text-pink-900 p-2 rounded-xl border border-pink-200 text-center">ne + st = nest 🪺</span>
-            </div>
+          <div className="bg-white/95 backdrop-blur-md text-slate-900 p-4 rounded-2xl space-y-2 border border-white/60 text-center">
+            <span className="bg-purple-100 text-purple-900 px-3 py-1 rounded-full text-xs font-black inline-block">Magic "E" & Prefixes ✨</span>
+            <p className="text-xs font-extrabold text-slate-800 pt-1">
+              hop ➔ <span className="text-purple-600 font-black">hope</span> | cap ➔ <span className="text-purple-600 font-black">cape</span>
+            </p>
           </div>
         </div>
       );
     case 5:
       return (
-        <div className="bg-gradient-to-tr from-teal-400 to-emerald-600 p-6 rounded-3xl text-white shadow-xl border-2 border-teal-200 relative overflow-hidden space-y-3">
+        <div className="bg-gradient-to-tr from-rose-400 to-pink-500 p-6 rounded-3xl text-white shadow-xl border-2 border-rose-200 relative overflow-hidden space-y-3">
           <div className="flex items-center justify-between">
-            <span className="bg-slate-950 text-teal-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 6 Sight Word Mastery</span>
-            <Star className="w-6 h-6 text-amber-300 fill-amber-300 animate-bounce-soft shrink-0" />
+            <span className="bg-slate-950 text-rose-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 6 Demo</span>
+            <BookOpen className="w-6 h-6 text-amber-300 animate-bounce-soft shrink-0" />
           </div>
           <div className="bg-white/95 backdrop-blur-md text-slate-900 p-4 rounded-2xl space-y-2 border border-white/60">
-            <div className="flex flex-wrap items-center justify-center gap-2 font-black text-xs">
-              <span className="bg-amber-400 text-slate-950 px-3 py-1.5 rounded-xl shadow-md border border-amber-200">THE</span>
-              <span className="bg-teal-500 text-white px-3 py-1.5 rounded-xl shadow-md">SAID</span>
-              <span className="bg-emerald-500 text-white px-3 py-1.5 rounded-xl shadow-md">WAS</span>
-              <span className="bg-sky-500 text-white px-3 py-1.5 rounded-xl shadow-md">ONE</span>
+            <div className="grid grid-cols-2 gap-2 text-xs font-black">
+              <span className="bg-rose-100 text-rose-900 p-2 rounded-xl border border-rose-200 text-center">Nouns & Verbs 📝</span>
+              <span className="bg-pink-100 text-pink-900 p-2 rounded-xl border border-pink-200 text-center">Adjectives ✨</span>
+              <span className="bg-rose-100 text-rose-900 p-2 rounded-xl border border-rose-200 text-center">Tenses & Plurals ⏳</span>
+              <span className="bg-pink-100 text-pink-900 p-2 rounded-xl border border-pink-200 text-center">Creative Writing ✍️</span>
             </div>
           </div>
         </div>
@@ -502,31 +509,48 @@ const renderLevelVisual = (levelIndex) => {
       return (
         <div className="bg-gradient-to-tr from-indigo-500 to-purple-600 p-6 rounded-3xl text-white shadow-xl border-2 border-indigo-200 relative overflow-hidden space-y-3">
           <div className="flex items-center justify-between">
-            <span className="bg-slate-950 text-indigo-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 7 Spelling Secrets</span>
-            <Wand2 className="w-6 h-6 text-amber-300 animate-bounce-soft shrink-0" />
+            <span className="bg-slate-950 text-indigo-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 7 Demo</span>
+            <Star className="w-6 h-6 text-amber-300 fill-amber-300 animate-bounce-soft shrink-0" />
           </div>
           <div className="bg-white/95 backdrop-blur-md text-slate-900 p-4 rounded-2xl space-y-2 border border-white/60 text-center">
-            <span className="bg-indigo-100 text-indigo-900 px-3 py-1 rounded-full text-xs font-black block">Magic "E" Rule ✨</span>
+            <span className="bg-indigo-100 text-indigo-900 px-3 py-1 rounded-full text-xs font-black inline-block">Speech Marks & Rules 💬</span>
             <p className="text-xs font-extrabold text-slate-800 pt-1">
-              hop ➔ <span className="text-purple-600 font-black">hope</span> | cap ➔ <span className="text-purple-600 font-black">cape</span>
+              "The cat sat," said Tim. 📖
             </p>
           </div>
         </div>
       );
     case 7:
+      return (
+        <div className="bg-gradient-to-tr from-teal-400 to-emerald-600 p-6 rounded-3xl text-white shadow-xl border-2 border-teal-200 relative overflow-hidden space-y-3">
+          <div className="flex items-center justify-between">
+            <span className="bg-slate-950 text-teal-300 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 8 Demo</span>
+            <Award className="w-6 h-6 text-amber-300 animate-bounce-soft shrink-0" />
+          </div>
+          <div className="bg-white/95 backdrop-blur-md text-slate-900 p-4 rounded-2xl space-y-2 border border-white/60 text-center">
+            <p className="text-xs font-black text-slate-800 italic">
+              Statements • Questions • Commands • Exclamations
+            </p>
+            <span className="bg-teal-500 text-white px-3 py-1 rounded-full text-[10px] font-black uppercase inline-block">
+              Paragraph & Story Writing ✍️
+            </span>
+          </div>
+        </div>
+      );
+    case 8:
     default:
       return (
         <div className="bg-gradient-to-tr from-amber-400 to-yellow-500 p-6 rounded-3xl text-slate-950 shadow-xl border-2 border-amber-200 relative overflow-hidden space-y-3">
           <div className="flex items-center justify-between">
-            <span className="bg-slate-950 text-amber-400 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 8 Fluent Reader</span>
+            <span className="bg-slate-950 text-amber-400 text-[10px] sm:text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Level 9 Demo</span>
             <Award className="w-6 h-6 text-slate-950 animate-bounce-soft shrink-0" />
           </div>
           <div className="bg-white/95 backdrop-blur-md text-slate-900 p-4 rounded-2xl space-y-2 border border-white/60 text-center">
             <p className="text-xs font-black text-slate-800 italic">
-              "The brave cat ran to the big green tree..."
+              "Complex Clauses, Idioms & Advanced Essays..."
             </p>
             <span className="bg-amber-500 text-slate-950 px-3 py-1 rounded-full text-[10px] font-black uppercase inline-block">
-              🏆 Independent Reader Certified
+              🏆 Master Literacy Certified
             </span>
           </div>
         </div>
@@ -1217,38 +1241,52 @@ export default function AayushPhonicsHub() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            <div className="lg:col-span-5 relative">
-              <div className="bg-gradient-to-tr from-amber-400 to-orange-400 rounded-3xl p-8 shadow-2xl text-slate-950 space-y-6 relative overflow-hidden">
-                <div className="w-24 h-24 bg-white rounded-3xl shadow-md mx-auto sm:mx-0 overflow-hidden border-2 border-white/80 shrink-0">
-                  <img src="/trainer.png" alt="Rupali Kulkarni - Phonics Trainer" className="w-full h-full object-cover" />
-                </div>
-                <div>
-                  <span className="bg-slate-950 text-amber-300 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider">
-                    UK Certified Trainer
-                  </span>
-                  <h3 className="text-3xl font-black mt-2 font-heading">Rupali Kulkarni</h3>
-                  <p className="text-sm font-bold text-slate-900 mt-1">
-                    Official Jolly Learning Phonics Trainer
-                  </p>
-                </div>
-                <div className="space-y-2 text-xs font-bold text-slate-900 border-t border-amber-500/40 pt-4">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-slate-950" />
-                    <span>Certified from Jolly Learning, UK</span>
+            <div className="lg:col-span-6 relative">
+              <div className="bg-gradient-to-tr from-amber-400 to-orange-400 rounded-3xl shadow-2xl text-slate-950 relative overflow-hidden grid grid-cols-1 sm:grid-cols-12 min-h-[340px]">
+                
+                {/* Left Side Text Content */}
+                <div className="sm:col-span-7 p-6 sm:p-7 flex flex-col justify-between space-y-4 z-10">
+                  <div>
+                    <span className="bg-slate-950 text-amber-300 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider inline-block">
+                      UK Certified Trainer
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-black mt-3 font-heading leading-tight text-slate-950">
+                      Rupali Kulkarni
+                    </h3>
+                    <p className="text-xs sm:text-sm font-bold text-slate-900 mt-1">
+                      Official Jolly Learning Phonics Trainer
+                    </p>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-slate-950" />
-                    <span>Specialist in Early Childhood Literacy</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-slate-950" />
-                    <span>Trained 500+ Children & Educators</span>
+
+                  <div className="space-y-2 text-xs font-bold text-slate-900 border-t border-amber-500/40 pt-4">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-slate-950 shrink-0" />
+                      <span>Certified from Jolly Learning, UK</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-slate-950 shrink-0" />
+                      <span>Specialist in Early Childhood Literacy</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-slate-950 shrink-0" />
+                      <span>Trained 500+ Children & Educators</span>
+                    </div>
                   </div>
                 </div>
+
+                {/* Right Side Half Image */}
+                <div className="sm:col-span-5 relative min-h-[220px] sm:min-h-full">
+                  <img 
+                    src="/trainer.jpeg" 
+                    alt="Rupali Kulkarni - Official Phonics Trainer" 
+                    className="absolute inset-0 w-full h-full object-cover object-top rounded-b-3xl sm:rounded-r-3xl sm:rounded-bl-none"
+                  />
+                </div>
+
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-6 space-y-6">
               <span className="text-amber-600 font-black uppercase tracking-widest text-xs bg-amber-100 px-3 py-1 rounded-full">
                 Trainer Methodology
               </span>
