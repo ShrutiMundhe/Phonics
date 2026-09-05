@@ -704,31 +704,21 @@ export default function AayushPhonicsHub() {
       </div>
 
       {/* Navigation Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-100/80 shadow-sm transition-all">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-amber-100/80 shadow-sm transition-all">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-22 flex items-start justify-between pt-0">
           
-          {/* Logo Brand with Animated Badge */}
-          <a href="#home" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-12 h-12 bg-gradient-to-tr from-amber-400 to-orange-400 rounded-2xl flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg shadow-amber-300/50 group-hover:scale-105 transition-transform animate-bounce-soft font-heading">
-                AP
-              </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-400 rounded-full border-2 border-white flex items-center justify-center">
-                <span className="w-2 h-2 bg-white rounded-full"></span>
-              </div>
-            </div>
-            <div>
-              <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 block leading-tight font-heading group-hover:text-amber-600 transition-colors">
-                Aayush's Phonics Hub
-              </span>
-              <span className="text-xs font-bold text-amber-600 tracking-widest uppercase block flex items-center gap-1">
-                <Award className="w-3.5 h-3.5" /> By Rupali Kulkarni
-              </span>
-            </div>
+          {/* Logo Brand Image */}
+          <a href="#home" className="flex items-start group shrink-0 self-start">
+            <img 
+              src="/logo.png" 
+              alt="Aayush's Phonics Hub - By Rupali Kulkarni" 
+              style={{ width: '160px', height: 'auto' }}
+              className="object-contain hover:scale-105 transition-transform" 
+            />
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-7 font-bold text-slate-700 text-sm">
+          <nav className="hidden md:flex items-center gap-7 font-bold text-slate-700 text-sm self-center">
             <a href="#home" className="hover:text-amber-600 transition-colors py-1">Home</a>
             <a href="#sound-station" className="hover:text-amber-600 transition-colors py-1 flex items-center gap-1.5">
               <Volume2 className="w-4 h-4 text-amber-500" /> Sound Station
@@ -742,7 +732,7 @@ export default function AayushPhonicsHub() {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="hidden md:flex items-center gap-3.5">
+          <div className="hidden md:flex items-center gap-3.5 self-center">
             <a 
               href="https://wa.me/918369620982?text=Hello%20Rupali%20Maam,%20I%20am%20interested%20in%20Phonics%20Classes" 
               target="_blank"
@@ -767,7 +757,7 @@ export default function AayushPhonicsHub() {
               playTone(500, 'sine');
               setMobileMenuOpen(!mobileMenuOpen);
             }} 
-            className="md:hidden p-2.5 rounded-xl text-slate-700 bg-amber-100/70 hover:bg-amber-200"
+            className="md:hidden p-2.5 rounded-xl text-slate-700 bg-amber-100/70 hover:bg-amber-200 self-center"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -1812,9 +1802,14 @@ export default function AayushPhonicsHub() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-slate-800">
             
             <div className="space-y-4">
-              <h3 className="text-2xl font-black text-white font-heading">
-                Aayush's Phonics Hub
-              </h3>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl overflow-hidden border border-amber-400 bg-white shrink-0 shadow-md">
+                  <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+                </div>
+                <h3 className="text-2xl font-black text-white font-heading">
+                  Aayush's Phonics Hub
+                </h3>
+              </div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Official Certified Trainer from Jolly Learning, UK. Empowering young children to read and write with joy, and training educators with world-class methodologies.
               </p>
